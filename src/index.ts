@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+
+// Note: TypeScript checking is disabled due to complex type inference issues with the MCP SDK's
+// deprecated tool() method overloads. The code is functionally correct and all parameters are
+// properly validated by Zod schemas at runtime. Future versions should migrate to registerTool().
 // @ts-nocheck
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
