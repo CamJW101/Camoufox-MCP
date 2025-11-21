@@ -2,15 +2,35 @@
   "name": "camoufox-mcp",
   "version": "1.0.0",
   "description": "An MCP server that allows Camoufox to be used by your model, with an emphasis on context size management and speed.",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "camoufox-mcp": "dist/index.js"
+  },
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "mcp",
+    "camoufox",
+    "browser",
+    "automation",
+    "anti-detection",
+    "fingerprint"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.22.0",
-    "camoufox-js": "^0.8.3"
+    "camoufox-js": "^0.8.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "playwright-core": "^1.56.1",
+    "typescript": "^5.9.3"
   }
 }
