@@ -1,0 +1,16 @@
+{
+  "name": "camoufox-mcp",
+  "version": "1.0.0",
+  "description": "An MCP server that allows Camoufox to be used by your model, with an emphasis on context size management and speed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "camoufox-js": "^0.8.3"
+  }
+}
